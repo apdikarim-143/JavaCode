@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Home | Restaurant Bills</title>
+  <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+
+<nav>
+  <a href="index1.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="help.html">Help</a>
+</nav>
+
+<div class="container">
+  <h2>Restaurant Payment Bills</h2>
+
+  <label>Customer Name</label>
+  <input type="text" id="customerName">
+
+  <label>Food Price ($)</label>
+  <input type="number" id="foodPrice">
+
+  <label>Drink Price ($)</label>
+  <input type="number" id="drinkPrice">
+
+  <button id="calcBtn">Calculate Bill</button>
+
+  <p class="error" id="errorMsg"></p>
+  <p class="result" id="totalMsg"></p>
+</div>
+
+<script src="project.js"></script>
+</body>
+</html>
