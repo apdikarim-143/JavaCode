@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Restaurant Payment Bills</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+    }
+
+    /* Navigation */
+    nav {
+      background-color: #28a745;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* Main container */
+    .container {
+      background: white;
+      padding: 20px;
+      width: 350px;
+      margin: 30px auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+
+    input {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+    }
+
+    button {
+      width: 100%;
+      margin-top: 15px;
+      padding: 10px;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #218838;
+    }
+
+    .error {
+      color: red;
+      margin-top: 10px;
+    }
+
+    .result {
+      color: green;
+      margin-top: 10px;
+    }
+
+    /* Sections */
+    .section {
+      display: none;
+    }
+
+    .active {
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="#" onclick="showSection('home')">Home</a>
+    <a href="#" onclick="showSection('about')">About</a>
+    <a href="#" onclick="showSection('help')">Help</a>
+  </nav>
+
+  <!-- HOME -->
+  <div class="container section active" id="home">
+    <h2>Restaurant Payment Bills</h2>
+
+    <label>Customer Name</label>
+    <input type="text" id="customerName">
+
+    <label>Food Price ($)</label>
+    <input type="number" id="foodPrice">
+
+    <label>Drink Price ($)</label>
+    <input type="number" id="drinkPrice">
+
+    <button id="calcBtn">Calculate Bill</button>
+
+    <p class="error" id="errorMsg"></p>
+    <p class="result" id="totalMsg"></p>
+  </div>
+
+  <!-- ABOUT -->
+  <div class="container section" id="about">
+    <h2>About</h2>
+    <p>
+      This website is designed to help restaurants calculate customer bills
+      easily by adding food and drink prices.
+    </p>
+    <p>
+      It is simple, fast, and user-friendly.
+    </p>
+  </div>
+
+  <!-- HELP -->
+  <div class="container section" id="help">
+    <h2>Help</h2>
+    <p>
+      1. Enter the customer name.<br>
+      2. Enter food and drink prices.<br>
+      3. Click "Calculate Bill".<br>
+      4. The total amount will be displayed.
+    </p>
+    <p>
+      If you see an error, make sure all fields are filled correctly.
+    </p>
+  </div>
+
+  <script src="javaproject.js"> </script>
+
+</body>
+</html>
+</body>
+</html>
